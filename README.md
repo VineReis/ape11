@@ -47,6 +47,10 @@ Por meio de um processo de versionamento, é possível reconhecer facilmente qua
 Upgrades Estéticos: Sistemas da informação surgem diante da necessidade de facilitar o trabalho humano, tornando-o mais eficiente e eficaz. Com esse objetivo em mente, os softwares e dispositivos mais recentes têm buscado aprimorar a experiência de uso para algo mais intuitivo e de fácil manuseio.
 Buscando um aprimoramento, melhorias são adotadas com layouts responsivos, ao passo que designs mais atrativos, cores, botões e imagens chamativas provocam alterações significativas de códigos. Sem um sistema de controle de versão, a atividade de acompanhamento em cada uma dessas alterações se torna muito complicada.
 
+# Pergunta 06 - Cite pelo menos três ferramentas de controle de versão e faça um breve detalhamento sobre cada uma delas.
+Resposta: 
+
+
 
 
 
