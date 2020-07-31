@@ -19,7 +19,16 @@ Resposta: O Git é ótimo para o uso de versionamento devido a sua praticidade e
 Um dos motivos principais de se usar o Git é o preço, onde o mesmo deixa gratuito para a colocação de repositórios públicos, e deixa até 3 diretórios privados onde para o aumento, deve-se efetuar o pagamento.
 
 # Pergunta 04 - Quais as vantagens do Git?
+Resposta: Rapidez: como os processos são operados localmente, deixa de ser preciso contactar o servidor central para proceder a operações como um commit, log ou diff.
+Autonomia: permite trabalhar em modo desconectado, em qualquer local, só sendo necessária uma conexão com a rede para troca de revisões com outros repositórios.
+Ramos individuais: contrariamente aos chamados sistemas centralizados, combinar ramos não é uma obrigação para cada commit e antes uma decisão que depende do programador; o trabalho local faz-se num ramo individual que não tem interferência com os demais ramos, mesmo em processos de sincronização entre repositórios.
+Facilidade na Fusão: os DVCS (Distributed Version Control – Controle de Versão Distribuído) usam o rastreamento automático, o que facilita de forma significativa o processo de fusão.
+Confiabilidade: com um sistema centralizado, qualquer problema que surja no servidor vai parar todo o trabalho de desenvolvimento. Um sistema distribuído permite que a equipa continue a trabalhar e os repositórios dos programadores servem como cópias de backup, não havendo riscos de perder nada do projeto.
+Redução de custos com o servidor: o repositório "central" (se ele existir) funciona como repositório "oficial", ao invés de ter uma função de processador central dos pedidos. Assim, a carga de processamento é distribuída pelas máquinas dos programadores.
+
+# Pergunta 05 - Qual a importância da utilização do controle de versionamento no desenvolvimento de um software?
 Resposta: 
+
 
 
 
