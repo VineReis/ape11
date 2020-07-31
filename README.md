@@ -18,7 +18,8 @@ Isso significa que você pode comparar o número da versão de qualquer software
 Resposta: O Git é ótimo para o uso de versionamento devido a sua praticidade e agilidade no quesito instalação e configuração. Sendo um sistema Open-Source, ele possui integração com diversos softwares, onde realizamos diversas configurações que deixam para nós, programadores, mais fácil de mostrar a clientes e demais desenvolvedores as etapas de criação do Sistema e o que foi mudado nas versões atuais para as versões anteriores as criadas.
 Um dos motivos principais de se usar o Git é o preço, onde o mesmo deixa gratuito para a colocação de repositórios públicos, e deixa até 3 diretórios privados onde para o aumento, deve-se efetuar o pagamento.
 
-
+# Pergunta 04 - Quais as vantagens do Git?
+Resposta: 
 
 
 
