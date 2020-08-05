@@ -11,7 +11,7 @@
     <img src="images/logo-unipar.png">
 
     <p>01 - Para que serve o commit e qual a melhor forma de utilizá-lo?</p>
-    <p>R: A ferramenta de commit do git é a ferramenta responsável por gravar o estado atual dos arquivos. Para
+    <p>R: A ferramenta de commit do Git é a ferramenta responsável por gravar o estado atual dos arquivos. Para
       o Git inicialmente todos os arquivos no diretório de trabalho não estão sendo monitorados (não versionados).
       A partir do momento que o arquivo é versionado (gravado o estado) uma unica vez ele começa a ser monitorado
       pelo Git.
@@ -45,7 +45,7 @@
     </p>
     <br>
     <p>04 - O que é branch?</p>
-    <p>R: Uma ramificação no git é um ponteiro para as alterações feitas do projeto. É útil em situações nas quais você
+    <p>R: Uma ramificação no Git é um ponteiro para as alterações feitas do projeto. É útil em situações nas quais você
       deseja adicionar um novo recurso ou corrigir um erro, gerando uma nova ramificação garantindo que o código instável
       não seja mesclado nos arquivos do projeto principal. Depois de concluir a atualização dos códigos da ramificação, você pode
       mesclar a ramificação com a principal, geralmente chamada de master.
@@ -54,9 +54,35 @@
     </p>
     <br>
     <p>05 - Como resolver possíveis conflitos no Git?</p>
-    <p>R:</p>
+    <p>R: O Git é uma ferramenta incrível para mesclar diferentes ramos de código. Na maioria das vezes as mudanças feitas por você
+      e por seus companheiros de projeto são mescladas automaticamente, mas de vez em quando acontecem conflitos.
+      Em termos simples, um conflito de merge no Git ocorre quando dois desenvolvedores alteram o mesmo trecho de código e a única maneira
+      de resolver este conflito é através de uma intervenção manual, alterando o código em questão e submetendo um novo commit.
+      Conflitos podem acontecer tanto ao mesclar branches (ramos), quanto ao mesclar commits dentro da mesma branch.
+      Conflitos no Git são bastante comuns e acontecem sempre quando o mesmo arquivo foi modificado por duas versões diferentes e essas
+      versões não podem ser automaticamente mescladas.
+      Digamos que você e seu amigo estão trabalhando na mesma branch em um repositório remoto do GitHub. Vocês estão trabalhando no código de um site.
+      Você abre o arquivo "index.html" e altera o código que corresponde ao título do site para "Hello Word". 
+      Você então salva o que acabou de fazer através de um novo commit local.
+      Em seguida, você precisa usar git pull para receber o repositório remoto, mesclar o código na sua máquina para então poder atualizar o 
+      repositório com as suas próprias alterações.
+      Ops! Uma mensagem de CONFLITO. Sabemos que o conflito ocorreu em index.html, pois a mensagem de conflito indica isso.
+      Bom, acontece que seu amigo deu um commit seguido de um push antes de você, alterando a mesma linha de código de forma diferente. Neste caso ele
+      escreveu "Olá Mundo" no título, e você, "Hello Word". 
+      O Git é fantástico em resolver fusões de código automaticamente, porém em casos onde duas alterações diferentes são feitas no mesmo trecho
+      de código, o sistema de versionamento não tem como saber qual das versões é a definitiva. Precisamos então, intervir manualmente no código, 
+      e para isso o Git cria essa flag, com "<<<<<<<", "=======" e ">>>>>>>", mostrando que nas seguintes linhas houve conflito.
+      Para resolver tais conflitos, primeiramente, precisamos localizar todos os arquivos onde ocorreram conflitos. Para então resolver o conflito,
+      portanto, é preciso alterara o arquivo para que contenha apenas uma versão. Apagando o código incorreto e removendo as marcações de conflito.
+      Ou seja, a questão aqui foi apenas escolher qual versão do código apagar. Mas vai ter casos em que uma versão é complementar à outra, então
+      você pode copiar parte do código do seu amigo e parte do seu código, gerando uma terceira versão definitiva para aquele trecho de 
+      conflito.
+      Não há regras sobre o que manter ou apagar na resolução de um conflito. A regra é que o arquivo seja alterado, mantendo-o em uma versão funcional
+      e correta. Depois que resolver o conflito então, você precisa adicionar a resolução à um novo commit para que seu código possa ser salvo no 
+      repositório remoto.
+    </p>
     <br>
-    <p>Links das atividades:</p>
+    <p>Links das demais atividades:</p>
 
     <ul> <!-- Colocar outros links. -->
       <p><a href="comandos-sem-flow.html">Clique aqui para ver os Comandos do Git sem o uso do Flow</a></p>
