@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Parte 2</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h1>Comandos com o uso do Flow</h1>
+    <p>Aluno: Vinicius Reis Batista</p>
+    <p>RA: 09010003</p>
+    <p>Curso: Sistemas de Informação</p>
+    <p>Polo: Cascavel-PR</p>
+    <br>
+    <img src="images/logo-unipar.png">
+    <br>
+    <p>Git Flow: um modelo de fluxo de trabalho para desenvolvimento de software com uma ou mais equipes distintas
+        contribuindo com a mesma base de código que visa normalizar o controle de versões. O Git Flow estabelece 
+        algumas regras de nomenclaturas para tipos de branches enquanto, ao mesmo tempo, define o que cada tipo de 
+        branch faz:</p>
+    <p>Branch master - é a branch que contém código em nível de produção, ou seja, o código mais maduro existente
+        na sua aplicação. Todo o código novo produzido eventualmente é juntado com a branch master em algum momento
+        do desenvolvimento.</p>
+    <p>Branch develop - é a branch que contém código em nível preparatório para o próximo deploy. Ou seja, quando
+        features são terminadas, elas são juntadas com a branch develop, testadas (em conjunto, no caso de mais de 
+        uma feature), e somente depois as atualizações da branch develop passam por mais um processo para então ser 
+        juntadas com a branch master.</p>
+    <p>Branch feature/* - é a branch no qual são desenvolvidos recursos novos para o projeto em questão. Essas
+        branches tem por convenção nome começando com feature/ (exemplo: feature/new-layout) e são criadas a 
+        partir da branch develop (pois um recurso pode depender diretamente de outro recurso em algumas situações),
+        e, ao final, são juntadas com a branch develop.</p>
+    <p>Branch hotfix/* - é a branch no qual são realizadas correções de bugs críticos encontrados em ambiente de 
+        produção, e que por isso são criadas a partir da branch master, e são juntadas diretamente com a branch master
+        e com a branch develop (pois os próximos deploys também devem receber correções de bugs críticos). Por 
+        convenção, essas branches tem o nome começando com hotfix/ e terminando com o próximo sub-número de versão 
+        (exemplo: hotfix/2.31.1), normalmente seguindo as regras de algum padrão de versionamento, como o padrão do
+        versionamento semântico.</p>
+    <p>Branch release/* - é a branch com um nível de confiança maior do que a branch develop, e que se encontram em 
+        nível de preparação para ser juntada com a branch master e com a branch develop (para caso tenha ocorrido
+        alguma correção de bug na branch release/* em questão). Note que, essas branches, bugs encontrados durante
+        os testes das features que vão para produção podem ser corrigidos mais tranquilamente, essas branches tem o
+        nome começando com release/ e terminando com número da próxima versão do software.</p>
+    <p>Comandos Básicos:</p>
+    <p>-> git flow feature start [NOMEDORECURSOQUEVOCÊQUERCRIAR] - Este comando cria um branch feature/[NOMEDORECURSOQUEVOCÊQUERCRIAR]
+        para o desenvolvimento de novos recursos.</p>
+    <p>-> git flow feature finish [NOMEDORECURSOQUEVOCÊQUERCRIAR - Este comando finaliza o branch feature/[NOMEDORECURSOQUEVOCÊQUERCRIAR]
+        unindo o mesmo com o branch develop.</p>
+    <p>-> git flow release start [versão] - Este comando cria um branch release/[VERSAO] para preparar o código para 
+        unir com o branch master.</p>
+    <p>-> git flow release finish [versão] - Este comando finaliza o branch release/[VERSAO] unindo o mesmo com o branch master.</p>
+    <p>-> git flow hotfix start [versão] - Este comando cria um branch hotfix/[VERSAO] para a correção de bugs 
+        críticos.</p>
+    <p>-> git flow hotfix finish [versão] - Este comando finaliza o branch hotfix/[VERSAO] unindo o mesmo com o branch master.</p>
+    <br>
+    <p>Links úteis:</p>
+
+    <ul> <!-- Colocar outros links. -->
+      <p><a href="index.html">Clique aqui para retornar ao inicio</a></p>
+      <br>
+      <p><a href="comandos-sem-flow.html">Clique aqui para ver os Comandos do Git sem o uso do Flow</a></p>
+    </ul>
+  </body>
+</html>
